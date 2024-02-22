@@ -1,0 +1,16 @@
+.header_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .header_title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .header_subtitle {
+    max-width: 480px;
+    text-align: center;
+  }
+}

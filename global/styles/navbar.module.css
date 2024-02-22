@@ -1,0 +1,119 @@
+.nav_wrapper {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  .nav_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+    .logo_link {
+      display: flex;
+    }
+    .logo_img {
+      width: 80px;
+    }
+    .nav_link {
+      padding: 0 12px;
+      flex-shrink: 0;
+    }
+    .current_link {
+      font-weight: 600;
+      cursor: default;
+      text-decoration: none;
+    }
+  }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 6px rgba(187, 199, 206, 0.25);
+}
+.nav_wrapper.absolute {
+  position: absolute;
+  box-shadow: none;
+}
+.mobile_menu {
+  display: none;
+}
+.menu_drawer {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .nav_link {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav_wrapper.absolute {
+    position: initial;
+  }
+  .nav_wrapper .nav_block {
+    width: 80%;
+  }
+  .links_desktop {
+    display: none;
+  }
+  .mobile_menu {
+    font-size: 35px;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+  }
+  .menu_drawer {
+    position: absolute;
+    display: block;
+    width: 0%;
+    opacity: 0;
+    overflow: hidden;
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: var(--color-white);
+    transition: all 0.4s ease;
+    .menu_btn_close {
+      font-size: 35px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+    .menu_content {
+      width: 90%;
+      margin: 80px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .nav_link {
+        font-size: 18px;
+        .nav_link:last-child::after {
+          height: 0;
+        }
+        .nav_link::after {
+          width: 100%;
+          display: block;
+          height: 1px;
+          background: var(--color-dark);
+          content: "";
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .menu_drawer.menu_open {
+    width: 100%;
+    opacity: 1;
+    left: 0;
+  }
+  .nav_btn {
+    display: none;
+  }
+}

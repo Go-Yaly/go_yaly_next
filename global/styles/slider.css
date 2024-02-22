@@ -1,0 +1,41 @@
+.slick-slide > div {
+  margin: 0 10px !important;
+}
+.slick-dots {
+  bottom: -50px !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+}
+.slick-dots li {
+  margin: 0 !important;
+}
+
+.arrow_block {
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 2px 15px 0 rgba(64, 77, 103, 0.25);
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.arrow_block.prev {
+  top: 50%;
+  left: -5px;
+  translate: 0 -45%;
+}
+.arrow_block.next {
+  top: 50%;
+  right: -5px;
+  translate: 0 -45%;
+  rotate: 180deg;
+}
+.arrow_icon {
+  color: #1c1c1c;
+  font-size: 15px;
+}

@@ -1,0 +1,17 @@
+.search_block {
+  flex-grow: 1;
+  max-width: 750px;
+  position: relative;
+  .search_icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1c1c1c;
+  }
+}
+@media screen and (max-width: 900px) {
+  .search_block {
+    display: none;
+  }
+}

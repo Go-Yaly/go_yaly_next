@@ -1,0 +1,36 @@
+.btn {
+  background: var(--btn-bg);
+  transition: all 0.2s ease; /* 142.857% */
+  border-radius: 8px;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  .btn:hover {
+    background: var(--btn-bg-hover);
+    text-decoration: none;
+  }
+}
+.btn_sm {
+  padding: 10px 15px;
+}
+.btn_md {
+  padding: 15px 25px;
+}
+.btn_lg {
+  padding: 15px 25px;
+  display: block;
+  width: 100%;
+}
+.disabled {
+  background: var(--btn-bg-light);
+}
+
+@media screen and (max-width: 350px) {
+  .btn_md {
+    padding: 12px 12px;
+  }
+}
