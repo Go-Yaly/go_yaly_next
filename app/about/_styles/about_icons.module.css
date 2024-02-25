@@ -12,10 +12,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    img {
+    .image {
       margin-bottom: 40px;
     }
-    h4 {
+    .title {
       margin-bottom: 10px;
     }
   }
@@ -28,10 +28,10 @@
       border-radius: 8px;
       flex-grow: 1;
     }
-    h4 {
+    .title {
       font-size: 16px;
     }
-    p {
+    .subtitle {
       font-size: 12px;
     }
   }

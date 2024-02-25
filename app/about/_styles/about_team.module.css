@@ -10,7 +10,7 @@
     max-width: 600px;
     box-shadow: 0px 2px 8px 0px rgba(17, 24, 39, 0.06);
     border-radius: 8px;
-    img {
+    .image {
       max-width: 190px;
       max-height: 190px;
     }
@@ -18,7 +18,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      p {
+      .position {
         line-height: normal;
       }
       .name {
@@ -37,12 +37,12 @@
     .card_member {
       max-width: auto;
       align-items: center;
-      img {
+      .image {
         max-width: 120px;
         max-height: 120px;
       }
       .content {
-        p {
+        .position {
           font-size: 12px;
         }
         .name {

@@ -4,10 +4,11 @@ import facebook from "../../assets/icons/facebook.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import youtube from "../../assets/icons/youtube.svg";
 import logo from "../../assets/images/logo.png";
-import { footerLinksCol1, footerLinksCol2, footerLinksCol3, footerLinksCol4, footerLinksCopywrite } from "../constants/Footer";
+import { footerLinksCol1, footerLinksCol2, footerLinksCol3, footerLinksCol4, footerLinksCopywrite } from "../constants/Footer.js";
 import styles from "../styles/footer.module.css";
 
 export default function Footer() {
+  console.log(footerLinksCol1);
   return (
     <footer className={styles.footer_container}>
       <div className={styles.footer_main_container}>

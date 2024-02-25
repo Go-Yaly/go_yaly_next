@@ -1,9 +1,9 @@
 .text_block {
   padding: 40px 0;
-  h3 {
+  .page_subtitle {
     margin-bottom: 16px;
   }
-  p {
+  .paragraph {
     line-height: 28px;
   }
   .last_paragraph {
@@ -13,7 +13,7 @@
   .link {
     font-weight: 500;
     color: #1c1c1c;
-    &:hover {
+    .link:hover {
       text-decoration: underline;
     }
   }

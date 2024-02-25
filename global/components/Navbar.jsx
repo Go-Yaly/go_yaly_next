@@ -35,7 +35,7 @@ export default function Navbar(props) {
   const renderNavLinks = () => {
     return navLinks.map((el) => {
       return (
-        <Link to={el.path} key={el.key} className={`${styles.nav_link} ${el.path === pathname ? styles.current_link : ""}`}>
+        <Link href={el.path} key={el.key} className={`${styles.nav_link} ${el.path === pathname ? styles.current_link : ""}`}>
           {el.name}
         </Link>
       );
@@ -45,7 +45,7 @@ export default function Navbar(props) {
   return (
     <nav className={`${styles.nav_wrapper} ${isFixed ? styles.fixed : ""} ${styles[props.position]}`}>
       <div className={styles.nav_block}>
-        <Link to="/" className={styles.logo_link}>
+        <Link href="/" className={styles.logo_link}>
           <Image src={logo} alt="company logo" className={styles.logo_img} />
         </Link>
         <SearchBar carsName={props.carsName} />
